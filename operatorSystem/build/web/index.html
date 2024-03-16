@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="NewServlet" method="get">
+            <table>
+                <tr>
+                    <td>First</td>
+                    <td> <input type="text" name="first"> </td>
+                </tr>
+                <tr>
+                    <td>Second</td>
+                    <td> <input type="text" name="second"> </td>
+                </tr>
+                <tr>
+                    <td>Operator</td>
+                    <td>
+                        <select name="operator">
+                            <option value="1">+</option>
+                            <option value="2">-</option>
+                            <option value="3">*</option>
+                            <option value="4">/</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Result: </td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="calculate" id="ketqua">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <script lang="javascript">
+            var result = document.getElementById("ketqua");
+        </script>
+    </body>
+</html>
